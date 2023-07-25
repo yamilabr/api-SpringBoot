@@ -44,7 +44,7 @@ public class UsersController {
 		return this.userService.saveUser(user);
 	}
 	
-	@PutMapping("/{id}") //PutMapping se utiliza para modificar un usuario, en este caso por id
+	@PutMapping("/{id}") 
 	public ResponseEntity<String> modificarUser(@PathVariable Long id,@RequestBody Users user)
 	{
 		String resource=userService.putUsers(id, user);
